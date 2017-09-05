@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.gengbk.bidreturn.MainActivity;
 import com.gengbk.bidreturn.R;
+import com.gengbk.bidreturn.auth.PhoneAuthActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,7 +46,7 @@ public class Login extends Activity {
     @OnClick(R.id.btn_login)
     public void getlogin(){
 //        if(account.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, PhoneAuthActivity.class);
             startActivity(intent);
 //        }
     }
